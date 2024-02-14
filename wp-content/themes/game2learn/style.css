@@ -1,0 +1,547 @@
+/*	=============================================================
+	GAME2LEARN MAIN STYLE SHEET
+	-------------------------------------------------------------
+	=============================================================	*/
+	
+body {
+	color: #333;
+	font: 15px Verdana, sans-serif;
+	text-align: left;
+	background: #e1e7b3;
+}
+
+
+/*	=============================================================
+	MAIN ELEMENTS
+	Most important elements are declared here
+	=============================================================	*/
+	
+	
+/*	Wrappers
+	-------------------------------------------------------------	*/
+	
+#wrapper {
+	background: #54a8cd url('images/body_bg.gif') repeat-x bottom left;
+}
+	
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#header {
+	background: #54a8cd url('images/sunburst_bg-trans.png') no-repeat top center;
+}
+
+#main {
+	padding: 40px 0 50px 0;
+	background: #fff url('images/main_bg.gif') repeat-x top left;
+}
+
+#page {
+	float: left;
+	width: 620px;
+}
+
+#page.home {
+	float: none;
+	width: auto;
+}
+
+#page_side {
+	float: right;
+	width: 300px;
+}
+
+#footer {
+	clear: both;
+	height: 80px;
+	padding: 20px 0 0 0;
+	font: 0.8em Verdana, Helvetica, sans-serif;
+	color: #7f8247;
+	background: #fff url('images/footer_bg.gif') repeat-x bottom left;
+}
+
+
+/*	=============================================================	
+	USER MENU
+	-------------------------------------------------------------	*/
+	
+#user_menu {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 10px 15px 6px 15px;
+	color: #fff;
+	background: #54a8cd;
+}
+
+#user_menu a:link,
+#user_menu a:visited {
+	font-weight: bold;
+	color: #fff;
+}
+
+#user_menu a:hover {
+	text-decoration: none;
+}
+
+
+/*	Edit Page
+	-------------------------------------------------------------	*/
+	
+#edit_page {
+	position: absolute;
+	top: 75px;
+	right: 0;
+}
+
+#edit_page a:link,
+#edit_page a:visited {
+	padding: 8px 10px;
+	text-decoration: none;
+	font-size: 0.8em;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	text-shadow: 0 -1px #d1eccf;
+	color: #095004;
+	font-weight: bold;
+	background: #36a82e url('images/top_menu_bg.gif') top left repeat-x;
+}
+
+#edit_page a:hover {
+	text-shadow: none;
+	color: #fff;
+	background: #186e12;
+}
+
+
+
+
+/*	=============================================================	
+	HEADER
+	-------------------------------------------------------------	*/
+
+#header .logo {
+	float: left;
+	padding: 15px 0 10px 0;
+}
+
+
+/*	Header Menu
+	-------------------------------------------------------------	*/
+
+#header .menu {
+	clear: both;
+	padding: 0 20px;
+	margin-top: 40px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background: #38a930 url('images/top_menu_bg.gif') repeat-x top left;
+}
+	
+#header .menu ul li {
+	float: left;
+	padding: 0 17px 0 11px;
+	background: url('images/menu_li_bg.png') no-repeat center right;
+}
+
+#header .menu ul li.last {
+	padding-right: 20px;
+	background: none;
+}
+	
+#header .menu ul li a:link,
+#header .menu ul li a:visited {
+	display: block;
+	float: left;
+	text-decoration: none;
+	font: 17px Tahoma, Helvetica, sans-serif;
+	color: #fff;
+	height: 38px;
+	line-height: 36px;
+	text-shadow: #196d13 1px 1px 1px;
+}
+
+#header .menu ul li a:hover,
+#header .menu ul li.current_page_item a:link,
+#header .menu ul li.current_page_item a:visited,
+#header .menu ul li.current_page_parent a:link,
+#header .menu ul li.current_page_parent a:visited {
+	text-shadow: none;
+	color: #0c5307;
+}
+
+
+
+/*	=============================================================	
+	MAIN
+	-------------------------------------------------------------	*/
+	
+/*	Defaults
+	-------------------------------------------------------------	*/
+	
+#main h1 {
+	padding: 19px 0 10px 0;
+	font: 2.4em 'Viga', Sans-serif;
+	color: #4474c0;
+}
+
+#main h2 {
+	padding: 16px 0 9px 0;
+	font: 1.8em Verdana, Helvetica sans-serif;
+	color: #767676;
+}
+
+#main h3 {
+	padding: 13px 0 7px 0;
+	text-shadow: #a04003 1px 1px 1px;
+	letter-spacing: -1px;
+	font: 1.2em 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	color: #fff;
+}
+
+#main h4 {
+	padding: 10px 0 7px 0;
+	letter-spacing: -1px;
+	font: 1.2em 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	color: #38851f;
+}
+
+#main p {
+	padding: 4px 0 9px 0;
+	line-height: 1.5em;
+}
+
+#main a {
+	color: #135196;
+}
+
+#main strong {
+	font-weight: bold;
+}
+
+#main small {
+	font-size: 0.6em;
+}
+
+#main ul,
+#main ol {
+	padding: 8px 0 6px 0;
+	margin-left: 20px;
+}
+
+#main ul li {
+	padding: 7px 0 4px 0;
+	list-style-type: disc;
+}
+
+#main ol li {
+	padding: 7px 0 4px 0;
+	margin-left: 10px;
+	list-style-type: decimal;
+}
+
+#main .more_details {
+	display: none;
+}
+
+#main .open {
+	cursor: pointer;
+}
+	
+
+
+	
+	
+/*	=============================================================	
+	HOME
+	-------------------------------------------------------------	*/
+	
+#home_banner {
+	clear: both;
+	padding: 35px 0 30px 0;
+	background: #54a8cd;
+}
+
+#home_banner h1 {
+	padding: 10px 0 15px 0;
+	font: 2.1em 'Viga', Sans-serif;
+	color: #fff;
+}
+
+#home_banner .details {
+	float: right;
+	width: 520px;
+	padding-bottom: 50px;
+	text-align: left;
+	line-height: 30px;
+	font-size: 1.25em;
+	color: #2b5b71;
+}
+
+#home_banner p {
+	padding: 10px 0 5px 0;
+}
+	
+
+/*	=============================================================	
+	HOME BOXES
+	-------------------------------------------------------------	*/
+
+
+#main .home_box {
+	float: left;
+	margin-right: 20px;
+	width: 300px;
+}
+
+#main .home_box h1 {
+	font-size: 1.4em;
+}
+
+#main .home_box.last {
+	margin-right: 0;
+}
+	
+
+
+/*	=============================================================	
+	INFO BOXES
+	-------------------------------------------------------------	*/
+	
+#main .info_box {
+	float: left;
+	margin-left: 20px;
+	padding: 0 20px 20px 20px;
+	color: #fff;
+}
+
+#main .info_box.red {
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background: #da1b1b url('images/boxes/box_red.gif') top left repeat-x;
+}
+
+#main .info_box h1 {
+	font-size: 2em;
+	color: #840101;
+}
+
+#main .info_box.red h1 {
+	text-shadow: #f3aaaa 1px 1px 1px;
+	color: #840101;
+}
+
+#main .info_box img {
+	padding: 0 0 4px 4px;
+}
+
+
+
+/*	=============================================================	
+	SIDEBAR WIDGET
+	-------------------------------------------------------------	*/
+	
+#page_side .item_image .no-image {
+	display: none;
+}
+
+#page_side h2 {
+	text-shadow: #f4b2b2 1px 1px 1px;
+	color: #940505;
+}
+
+#page_side a:link,
+#page_side a:visited {
+	text-decoration: underline;
+	color: #fff;
+}
+
+#page_side a:hover {
+	text-decoration: none;
+}
+
+#page_side .title {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#page_side p {
+	font-size: 0.85em;
+	color: #f5d2d2;
+}
+
+#page_side #cd_bg {
+	float: right;
+	width: 100px;
+	height: 81px;
+	background: url('images/icons/side_cd.gif') no-repeat top left;
+}
+
+#page_side ul li {
+	list-style: none;
+}
+
+
+
+
+/*	Side Menu
+	-------------------------------------------------------------	*/
+
+#page_side .side_menu {
+	margin-bottom: 20px;
+	padding: 12px 20px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	list-style-type: disc;
+	background: #38a930;
+}
+
+#page_side .side_menu h1 {
+	padding: 0;
+	font-size: 1.5em;
+	color: #f5f325;
+}
+
+#page_side .side_menu a:link,
+#page_side .side_menu a:visited {
+	padding: 3px 0;
+	text-decoration: none;
+	font: bold 15px Verdana, Helvetica, sans-serif;
+	color: #fff;
+}
+
+#page_side .side_menu a:hover {
+	text-decoration: underline;
+}
+
+#page_side .side_menu li.current_page_item a:link,
+#page_side .side_menu li.current_page_item a:visited {
+	padding-left: 2px;
+	text-shadow: none;
+	color: #134601;
+}
+
+
+
+
+/*	=============================================================	
+	SHOPPING CART
+	-------------------------------------------------------------	*/
+
+#page .ecwid-productBrowser-auth-mini,
+#page .ecwid-productBrowser-subcategories-mainTable {
+	display: none;
+}
+
+/*	=============================================================	
+	CONTACT FORM
+	-------------------------------------------------------------	*/
+	
+#page .wpcf7 {
+	width: 370px;
+}
+	
+#page .wpcf7-form input,
+#page .wpcf7-form textarea {
+	padding: 5px 4px;
+	font: 15px Verdana, Helvetica sans-serif;
+	color: #bcbcbc;
+	border: 2px #dcdcdc solid;
+}
+
+#page .wpcf7-form input:focus,
+#page .wpcf7-form textarea:focus {
+	border: 2px #aaa solid;
+	color: #666;
+}
+
+#page .wpcf7-form textarea {
+	resize: vertical;
+}
+
+#page input.wpcf7-submit {
+	float: right;
+	cursor: pointer;
+	margin-bottom: 20px;
+	padding: 8px 12px;
+	border: 0;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background: #37a92f;
+}
+
+#page span.wpcf7-not-valid-tip-no-ajax {
+	padding: 2px 6px;
+	border: 1px #e99898 solid;
+	background: #fddfdf;
+}
+
+#page .wpcf7-validation-errors,
+#page .wpcf7-mail-sent-ng {
+	clear: both;
+	margin: 15px 0;
+	padding: 2px 6px;
+	border: 1px #e99898 solid;
+	background: #fddfdf;
+}
+
+#page .wpcf7-response-output {
+	clear: both;
+	font-weight: bold;
+	color: #40ad38;
+}
+	
+	
+/*	=============================================================	
+	FOOTER
+	-------------------------------------------------------------	*/
+	
+#footer a:link,
+#footer a:visited {
+	text-decoration: none;
+	color: #7f8247;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+#footer p {
+	clear: both;
+	padding: 12px 0 5px 0;
+	font-size: 0.9em;
+}
+
+
+/*	menu
+	-------------------------------------------------------------	*/
+
+#footer li {
+	float: left;
+	list-style-type: none;
+	padding-right: 12px;
+}
+
+#footer li a:link,
+#footer li a:visited {
+	font-weight: bold;
+	color: #54a8cd;
+}
+
+#footer li a:hover {
+	text-decoration: underline;
+	color: #358aaf;
+}
+
+
+
+
